@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // ✅ disables ESLint check during build
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
