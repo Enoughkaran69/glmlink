@@ -1,5 +1,5 @@
-"use client";
 import styles from '../page.module.css';
+import Search from '../Search';
 
 export default function AboutContactPage() {
   return (
@@ -19,17 +19,7 @@ export default function AboutContactPage() {
             ))}
           </nav>
         </header>
-        <div className={styles.searchContainer}>
-          <input type="text" placeholder="Search for products or reels..." className={styles.searchInput} id="searchInputAbout" />
-          <button className={styles.searchButton} onClick={() => {
-            const val = document.getElementById('searchInputAbout').value;
-            if (val) window.location.href = `/search/${val}`;
-          }}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="white">
-              <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-            </svg>
-          </button>
-        </div>
+        <Search />
         <h2 className={styles.sectionTitle}>About Us</h2>
         <div style={{ marginBottom: '2rem', color: '#4b5563', fontSize: '1rem', textAlign: 'center' }}>
           <p>

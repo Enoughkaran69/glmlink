@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "GLAMLINK - Discover Products from Reels",
   description: "Discover and shop trending products from your favorite reels. GlamLink connects you to fashion, beauty, and decor items featured by top creators.",
+  icons: {
+    icon: '/icon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
